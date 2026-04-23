@@ -15,6 +15,10 @@ app.get('/learn', (req, res) => {
   res.send('Node js app, with CI basics');
 });
 
+app.get('/docker', (req, res) => {
+  res.send('Docker is a tool that pachages an application.');
+});
+
 app.listen(port, () => {
-  console.log(`Node Express app listening on port ${port}`);
+  console.log(`Node Express app listening on port http://localhost:${port}`);
 });
